@@ -29,3 +29,6 @@ window.addEventListener('scroll', function(){
         }
     });
 });
+
+var fechaNacimiento = new Date("2004-06-28");
+document.getElementById("edad").innerText = (new Date().getFullYear() - fechaNacimiento.getFullYear() - (new Date().getMonth() < fechaNacimiento.getMonth() || (new Date().getMonth() === fechaNacimiento.getMonth() && new Date().getDate() < fechaNacimiento.getDate())));
